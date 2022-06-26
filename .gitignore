@@ -1,4 +1,6 @@
 
+/public/uploads
+
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
