@@ -1,5 +1,6 @@
 
 /public/uploads
+/config/secrets/dev/dev.decrypt.private.php
 
 ###> symfony/framework-bundle ###
 /.env.local
