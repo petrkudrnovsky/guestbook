@@ -61,8 +61,7 @@ class ConferenceController extends AbstractController
                 'permalink' => $request->getUri(),
             ];
 
-            $spamResult = $spamChecker->getSpamScore($comment, $context);
-            if(0 != $spamResult) {
+            if(1 === $spamChecker->getSpamScore($comment, $context)) {
                 throw new \RuntimeException('Blatant spam, go away!');
             }
 
